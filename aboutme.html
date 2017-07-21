@@ -1,107 +1,154 @@
 <!DOCTYPE html>
 <html>
-<head>
+<title>Kaitlyn's Portfolio!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
 <style>
-
-body {background-color: rgb(255, 225, 215);}
-
-h1 {color: white;
-	font-family: courier;
-	width:300px;
-	border: 10px solid white;
- 	padding: 15px;
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
 }
-
-h2 {color: white;
-	font-family: courier;
-	width:70px;
-	border: 5px solid white;
- 	padding: 10px;
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("bike.gif");
+    min-height: 100%;
 }
-
-h3 {color: white;
-	font-family: courier;
-	width:110px;
-	border: 5px solid white;
- 	padding: 10px;
+.menu {
+    display: none;
 }
-
-h4 {color: white;
-	font-family: courier;
-	width:130px;
-	border: 5px solid white;
- 	padding: 10px;
-}
-
-p {color: white;
- 	font-family: courier;
-
-}
-
-<title>Page Title</title>
 </style>
-</head>
 <body>
 
-<center><img src="http://33.media.tumblr.com/c1dab0511ddba3fbbbf72cc2acadd059/tumblr_nre8p3Icys1rll9v3o1_540.gif" alt="YLIA Tree"
-	style="width:700px;height:300px;">
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">LIKES/DISLIKES</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">PROJECTS</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">My Portfolio</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT ME</span></h5>
+    <p>Hello! My name is Kaitlyn, and I'm sixteen years old! I currently go to Alameda High School. I've always wanted to learn how to code, but never actually pursued it until now. In my free time - literally any free time I may have - I love to draw; it's something I've done constantly since I was little, and continue to do until now. Other than drawing, I also really like writing! All the novels I've completed are old, though, and I try not to think about them because they're so cringe-worthy.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <center><p><b>FUN FACT</b></p></center>
+      <p>The reason I became interested in learning how to code is because I want to make my own game...then I found out that, other than art, it requires coding. So, I planned on self-teaching myself...but that literally never goes to plan. I've been working on this game for about four years now! It's been created and scrapped about four to five times, and I'm still trying to develop it.</p>
+    </div>
+    <img src="bike2.gif" style="width:100%;max-width:1000px" class="w3-margin-top">
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <div class="w3-row w3-center w3-card-2 w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Likes</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Dislikes</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card-2">
+      <h5>-Drawing</h5>
+    
+      <h5>-Writing</h5>
+    
+      <h5>-Dogs!! And alpacas</h5>
+    
+      <h5>-Your Lie in April (100% RECOMMENDED!!)</h5>
+      
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card-2">
+      <h5>-Stressing over stuff</h5>
+    
+      <h5>-CRAWFISH EGGS. THEY ARE THE MOST DISGUSTING THINGS EVER</h5>
+    
+      <h5>-arguing with people</h5>
+    
+      <h5>-wayyy too many things</h5>
+      
+    </div>  
+    <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
 
 
-<h1>About Me</h1>
-</center>
+<!-- End page content -->
+</div>
 
-<p>
-<img src="ichigo.png" alt="ur wifiiii"
-	style="float:right;width:350px;height:500px;border:50;">
-<p style="font-size:20px;">
-Hello! My name is Kaitlyn, and I'm sixteen years old! I currently go to Alameda High School. I've always wanted to learn how to code, but never actually pursued it until now.
-</p>
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
 
-<p>
-<p style="font-size:20px;">
-In my free time - literally any free time I may have - I love to draw; it's something I've done constantly since I was little, and continue to do until now. Other than drawing, I also really like writing! All the novels I've completed are old, though, and I try not to think about them because they're so cringe-worthy.
-</p>
-
-<h2>Likes</h2>
-
-<u1>
-<u1 style="color:white;
-	font-family: courier;">
-<u1 style="font-size:20px;
-">
+<script>
 
 
-  <li>drawing</1i>
-	<li>writing</1i>
-	<li>dogs!! and cats too I guess</1i>
-	<li>rainy days</1i>
-	<li>the sun</1i>
-	<li>Your Lie in April (100% RECOMMENDED TO WATCH)</1i>
-	<li>Studio Ghibli</1i>
-	<li>3DS</1i>
-	<li>reading</1i>
-</u1>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 
-<h3>Dislikes</h3>
-	<li>stttrrreeeesssing over something</1i>
-	<li>a lot of food, like corn and peas</1i>
-	<li>CRAWFISH EGGS. THEY ARE THE MOST DISGUSTING THING I'VE EVER SEEN IN MY LIFE.</1i>
-	<li>being argued with?? I guess?? but I like debating</1i>
-	<li>idk, I complain a lot so a list of dislikes would probably end up being too long</1i>
 
-<center>
-<h4>FUN FACT!!</h4>
-<p>
-The reason I became interested in learning is because I want to make my own game...but I found out that, other than art, it requires coding. So, I planned on self-teaching myself...but that literally never goes to plan. I've been working on this game for about four years now! It's been created and scrapped about four to five times, and I'm still trying to develop it.
-</p>
-</center>
+</body>
+</html>
 
-<img id='image' src="http://49.media.tumblr.com/tumblr_lz4k2zxKTv1r4xqamo1_500.gif" style="display:none">
+
+<img src="sidescroll.png" style="height:325px;width:320px">
+<img src="circuit.JPG" style="height:325px;width:450px;"">
+<img src="findingnimrat.png" style="height:325px;width:450px;"">
+
+<img id='image' src="http://49.media.tumblr.com/tumblr_lz4k2zxKTv1r4xqamo1_500.gif" style="display:none;">
 
 <button type="button" onclick="document.getElementById('image').style.display='block'">Here's something cool!</button>
 
+
 <script>
-window.alert("Prepare your eyes. It's all pink. I don't like pink. But it's aesthetically pleasing to the eyes.");
+window.alert("Welcome to my portfolio! Prepare for lots of Your Lie in April gifs, and enjoy your time here!.");
 </script>
 
 </body>
